@@ -1,41 +1,30 @@
 <%-- 
-    Document   : AgregarEstudiante
-    Created on : 10/08/2020, 11:20:46 PM
+    Document   : AgregarCarrera
+    Created on : 14/08/2020, 11:07:48 PM
     Author     : Ori
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Agregar Estudiante</title>
+        <title>Agregar Carrera</title>
         <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
-            <form name="AgregarEstudianteForm" action="Controlador" method="get">
+            <form name="AgregarCarrraForm" action="Controlador" method="get">
                 <table  class="table">
                     <thead>
                         <tr>
-                            <th class="text-center" colspan="2">Agregar Estudiante</th>                            
+                            <th class="text-center" colspan="2">Agregar Carrera</th>                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="text-right">Nombre</td>
                             <td><input class="form-control" type="text" name="f_nombre" value="" maxlength="30" size="20" /></td>
-                        </tr>
-                        <tr>
-                            <td class="text-right">Apellido</td>
-                            <td><input class="form-control" type="text" name="f_apellidos" value="" maxlength="40" size="20" /></td>
-                        </tr>
-                        <tr>
-                            <td class="text-right">DNI</td>
-                            <td><input class="form-control" type="text" name="f_dni" value="" maxlength="8" size="8" /></td>
-                        </tr>
-                        <tr>
-                            <td class="text-right">Codigo</td>
-                            <td><input class="form-control" type="text" name="f_codigo" value="" maxlength="12" size="12" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">Estado</td>
