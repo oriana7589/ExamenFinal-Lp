@@ -46,10 +46,10 @@
                         <td><% out.print(carrera.getNombre()); %></td>
                         <td><% out.print(carrera.getEstado()); %></td>
                         <td>
-                            <a class="btn btn-warning" href="Controlador?f_accion=editarcarrera01&f_idcarrera=<% out.print(carrera.getIdcarrera()); %>">
+                            <a class="btn btn-warning" href="ControladorCurso?f_accion=editarcarrera01&f_idcarrera=<% out.print(carrera.getIdcarrera()); %>">
                                 Editar
                             </a>
-                            <a class="btn btn-danger" href="Controlador?f_accion=eliminarcarrera&f_idcarrera=<% out.print(carrera.getIdcarrera()); %>">
+                            <a class="btn btn-danger" href="ControladorCurso?f_accion=eliminarcarrera&f_idcarrera=<% out.print(carrera.getIdcarrera()); %>">
                                 Eliminar
                             </a>
                         </td>

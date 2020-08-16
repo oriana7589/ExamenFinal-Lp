@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<%-- 
+    Document   : inexmatricula
+    Created on : 16/08/2020, 11:37:39 AM
+    Author     : Ori
+--%>
+
 <html>
     <head>
         <title>Index</title>
@@ -13,7 +13,8 @@ and open the template in the editor.
     </head>
     <body>
         <div class="container">
-            <a class="btn btn-success btn-lg" href="ControladorCarrera?f_accion=listarcarrera">Listar Carrera</a>
+            <a class="btn btn-success btn-lg" href="ControladorMatricula?f_accion=listarmatricula">Listar Matricula</a>
         </div>
     </body>
 </html>
+

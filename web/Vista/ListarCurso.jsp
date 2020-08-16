@@ -53,10 +53,10 @@
                         <td><% out.print(curso.getcreditos()); %></td>
                         <td><% out.print(curso.getEstado()); %></td>
                         <td>
-                            <a class="btn btn-warning" href="Controlador?f_accion=editarcurso01&f_idcurso=<% out.print(curso.getIdcurso()); %>">
+                            <a class="btn btn-warning" href="ControladorCurso?f_accion=editarcurso01&f_idcurso=<% out.print(curso.getIdcurso()); %>">
                                 Editar
                             </a>
-                            <a class="btn btn-danger" href="Controlador?f_accion=eliminarcurso&f_idcurso=<% out.print(curso.getIdcurso()); %>">
+                            <a class="btn btn-danger" href="ControladorCurso?f_accion=eliminarcurso&f_idcurso=<% out.print(curso.getIdcurso()); %>">
                                 Eliminar
                             </a>
                         </td>
