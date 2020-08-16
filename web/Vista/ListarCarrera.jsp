@@ -18,8 +18,9 @@
     </head>
     <body>
         <div class="container">
-            <h1>Listado de Carreras</h1>
+            <h1>Listado de Carrera</h1>
             <a class="btn btn-success" href="ControladorCarrera?f_accion=agregarcarrera01">Agregar Nueva Carrera</a>
+           
             <table class="table table-bordered">
                 <thead>
                     <tr>

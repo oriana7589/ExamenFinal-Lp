@@ -19,6 +19,7 @@
         <div class="container">
             <h1>Listado de Estudiantes</h1>
             <a class="btn btn-success" href="Controlador?f_accion=agregarestudiante01">Agregar Nuevo Estudiante</a>
+           
             <table class="table table-bordered">
                 <thead>
                     <tr>

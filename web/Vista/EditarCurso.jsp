@@ -21,7 +21,7 @@
                 int s_idcurso = Integer.valueOf(request.getParameter("f_idcurso"));
                 Curso curso = (Curso)cursoDAO.buscarcurso(s_idcurso);
             %>
-            <form name="EditarCursoForm" action="Controlador" method="get">
+            <form name="EditarCursoForm" action="ControladorCurso" method="get">
                 <table  class="table">
                     <thead>
                         <tr>

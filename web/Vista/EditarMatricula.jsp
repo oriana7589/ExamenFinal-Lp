@@ -21,14 +21,18 @@
                 int s_idmatricula = Integer.valueOf(request.getParameter("f_idmatricula"));
                 Matricula matricula = (Matricula)matriculaDAO.buscarmatricula(s_idmatricula);
             %>
-            <form name="EditarMatriculaForm" action="Controlador" method="get">
+            <form name="EditarMatriculaForm" action="ControladorMatricula" method="get">
                 <table  class="table">
                     <thead>
                         <tr>
-                            <th class="text-center" colspan="2">Editar Estudiante</th>                            
+                            <th class="text-center" colspan="2">Editar Matricula</th>                            
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td class="text-right">Estudiante</td>
+                            <td><input class="form-control" type="text" name="f_idestudiante" value="<% out.println(matricula.getIdestudiante()); %>" maxlength="12" size="12" /></td>
+                        </tr>
                         <tr>
                             <td class="text-right">Semestre</td>
                             <td><input class="form-control" type="text" name="f_semestre" value="<% out.println(matricula.getSemestre()); %>" maxlength="30" size="20" /></td>
@@ -40,10 +44,6 @@
                         <tr>
                             <td class="text-right">Curso</td>
                             <td><input class="form-control" type="text" name="f_idcurso" value="<% out.println(matricula.getIdcurso()); %>" maxlength="8" size="8" /></td>
-                        </tr>
-                        <tr>
-                            <td class="text-right">Estudiante</td>
-                            <td><input class="form-control" type="text" name="f_idestudiante" value="<% out.println(matricula.getIdestudiante()); %>" maxlength="12" size="12" /></td>
                         </tr>
                          <tr>
                             <td class="text-right">Carrera</td>

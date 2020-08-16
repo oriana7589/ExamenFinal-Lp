@@ -65,7 +65,7 @@ public class ControladorCarrera extends HttpServlet{
         String s_accion = request.getParameter("f_accion");
         if (s_accion.equalsIgnoreCase("listarcarrera")) {
             acceso = listarcarrera;
-        }else if (s_accion.equalsIgnoreCase("agregarcarera01")) {
+        }else if (s_accion.equalsIgnoreCase("agregarcarrera01")) {
             acceso = agregarcarrera;
         }else if (s_accion.equalsIgnoreCase("agregarcarrera02")) {
             String s_nombre = request.getParameter("f_nombre");

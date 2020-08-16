@@ -22,7 +22,8 @@
     <body>
         <div class="container">
             <h1>Listado de Cursos</h1>
-            <a class="btn btn-success" href="ControladorCurso?f_accion=agregarcursos01">Agregar Nuevo Curso</a>
+            <a class="btn btn-success" href="ControladorCurso?f_accion=agregarcurso01">Agregar Nuevo Curso</a>
+           
             <table class="table table-bordered">
                 <thead>
                     <tr>

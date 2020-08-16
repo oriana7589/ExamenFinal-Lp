@@ -22,7 +22,8 @@
     <body>
         <div class="container">
             <h1>Listado de Matriculas</h1>
-            <a class="btn btn-success" href="ControladorMatricula?f_accion=agregarestudiante01">Agregar Nueva Matricula</a>
+            <a class="btn btn-success" href="ControladorMatricula?f_accion=agregarmatricula01">Agregar Nueva Matricula</a>
+              
             <table class="table table-bordered">
                 <thead>
                     <tr>

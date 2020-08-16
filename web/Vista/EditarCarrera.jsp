@@ -21,7 +21,7 @@
                 int s_idcarrera = Integer.valueOf(request.getParameter("f_idcarrera"));
                 Carrera carrera = (Carrera)carreraDAO.buscarcarrera(s_idcarrera);
             %>
-            <form name="EditarCrreraForm" action="Controlador" method="get">
+            <form name="EditarCrreraForm" action="ControladorCarrera" method="get">
                 <table  class="table">
                     <thead>
                         <tr>

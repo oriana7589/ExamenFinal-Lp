@@ -44,10 +44,10 @@ public class ControladorCurso extends HttpServlet{
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Controladorcurso</title>");            
+            out.println("<title>Servlet ControladorCurso</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Controladorcurso at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ControladorCurso at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -71,7 +71,7 @@ public class ControladorCurso extends HttpServlet{
             acceso = listarcurso;
         }else if (s_accion.equalsIgnoreCase("agregarcurso01")) {
             acceso = agregarcurso;
-        }else if (s_accion.equalsIgnoreCase("agregarcursoe02")) {
+        }else if (s_accion.equalsIgnoreCase("agregarcurso02")) {
             String s_nombre = request.getParameter("f_nombre");
             String s_horas = request.getParameter("f_horas");
             String s_creditos = request.getParameter("f_creditos");
