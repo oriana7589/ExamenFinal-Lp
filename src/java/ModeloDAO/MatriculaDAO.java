@@ -28,7 +28,7 @@ public class MatriculaDAO implements CRUDMatricula{
     @Override
     public List listarmatricula() {
          ArrayList<Matricula> matriculas = new ArrayList<>();
-        String consulta = " Select idmatricula,semestre ,ciclo,e.nombre,cu.nombre,c.nombre,m.estado from estudiante e,curso cu, carrera c WHERE e.idestudiante=m.idestudiante and  cu.idcurso=m.idcurso and  c.idcarrera=m.idcarrera order by idmatricula";
+        String consulta = " Select idmatricula,e.nombre,semestre ,ciclo,cu.nombre,c.nombre,m.estado from estudiante e,curso cu, carrera c WHERE e.idestudiante=m.idestudiante and  cu.idcurso=m.idcurso and  c.idcarrera=m.idcarrera order by idmatricula";
         try {
             con = cn.getConnection();
             pst = con.prepareStatement(consulta);
