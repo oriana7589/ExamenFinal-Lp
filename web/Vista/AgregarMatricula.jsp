@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="container">
-            <form name="AgregarMatriculaForm" action="Controlador" method="get">
+            <form name="AgregarMatriculaForm" action="ControladorMatricula" method="get">
                 <table  class="table">
                     <thead>
                         <tr>
@@ -23,6 +23,10 @@
                     </thead>
                     <tbody>
                         <tbody>
+                            <tr>
+                            <td class="text-right">Estudiante</td>
+                            <td><input class="form-control" type="text" name="f_idestudiante" value="" maxlength="30" size="20" /></td>
+                        </tr>
                         <tr>
                             <td class="text-right">Semestre</td>
                             <td><input class="form-control" type="text" name="f_semestre" value="" maxlength="30" size="20" /></td>
@@ -35,10 +39,7 @@
                             <td class="text-right">Curso</td>
                             <td><input class="form-control" type="text" name="f_idcurso" value="" maxlength="30" size="20" /></td>
                         </tr>
-                        <tr>
-                            <td class="text-right">Estudiante</td>
-                            <td><input class="form-control" type="text" name="f_idestudiante" value="" maxlength="30" size="20" /></td>
-                        </tr>
+                        
                          <tr>
                             <td class="text-right">Carrera</td>
                             <td><input class="form-control" type="text" name="f_idcarrera" value="" maxlength="30" size="20" /></td>

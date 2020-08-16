@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="container">
-            <form name="AgregarCursoForm" action="Controlador" method="get">
+            <form name="AgregarCursoForm" action="ControladorCurso" method="get">
                 <table  class="table">
                     <thead>
                         <tr>
@@ -27,11 +27,11 @@
                             <td><input class="form-control" type="text" name="f_nombre" value="" maxlength="30" size="20" /></td>
                         </tr>
                         <tr>
-                            <td class="text-right">horas</td>
+                            <td class="text-right">Horas</td>
                             <td><input class="form-control" type="text" name="f_horas" value="" maxlength="40" size="20" /></td>
                         </tr>
                         <tr>
-                            <td class="text-right">creditos</td>
+                            <td class="text-right">Creditos</td>
                             <td><input class="form-control" type="text" name="f_creditos" value="" maxlength="8" size="8" /></td>
                         </tr>
                         

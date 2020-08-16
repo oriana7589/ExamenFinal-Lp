@@ -22,18 +22,17 @@
     <body>
         <div class="container">
             <h1>Listado de Matriculas</h1>
-            <a class="btn btn-success" href="Controlador?f_accion=agregarestudiante01">Agregar Nueva Matricula</a>
+            <a class="btn btn-success" href="ControladorMatricula?f_accion=agregarestudiante01">Agregar Nueva Matricula</a>
             <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th class="text-center">ID</th>
+                        <th class="text-center">Estudiante</th> 
                         <th class="text-center">Semestre</th>
                         <th class="text-center">Ciclo</th>
                         <th class="text-center">Carrera</th>
-                        <th class="text-center">Estudiante</th>
                         <th class="text-center">Curso</th>
                         <th class="text-center">Estado</th>
-                        <th class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,10 +49,10 @@
                     %>
                     <tr>
                         <td><% out.print(matricula.getIdmatricula()); %></td>
+                        <td><% out.print(matricula.getIdestudiante()); %></td>
                         <td><% out.print(matricula.getSemestre()); %></td>
                         <td><% out.print(matricula.getCiclo()); %></td>
                         <td><% out.print(matricula.getIdcurso()); %></td>
-                        <td><% out.print(matricula.getIdestudiante()); %></td>
                         <td><% out.print(matricula.getIdcarrera()); %></td>
                         <td><% out.print(matricula.getEstado()); %></td>
                         <td>

@@ -28,7 +28,6 @@
                         <th class="text-center">DNI</th>
                         <th class="text-center">Código</th>
                         <th class="text-center">Estado</th>
-                        <th class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>

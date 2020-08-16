@@ -8,23 +8,25 @@ package Modelo;
 
 public class Matricula {
     private int idmatricula;
+    private String idestudiante;
     private String semestre;
     private String ciclo;
     private String estado;
    private String idcurso;
-   private String idestudiante;
+   
      private String idcarrera;
  
     public  Matricula() {
     }
 
     public Matricula(int idmatricula, String semestre, String ciclo, String estado ,String idcurso,String idestudiante,String idcarrera) {
-        this.idmatricula = idmatricula;
+        this.idmatricula = idmatricula; 
+        this.idestudiante = idestudiante;
         this.semestre = semestre;
         this.ciclo = ciclo;
         this.estado = estado;
         this.idcurso = idcurso;
-        this.idestudiante = idestudiante;
+       
         this.idcarrera = idcarrera;
         
     }

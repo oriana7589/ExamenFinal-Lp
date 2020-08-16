@@ -22,7 +22,7 @@
     <body>
         <div class="container">
             <h1>Listado de Cursos</h1>
-            <a class="btn btn-success" href="Controlador?f_accion=agregarcursos01">Agregar Nuevo Curso</a>
+            <a class="btn btn-success" href="ControladorCurso?f_accion=agregarcursos01">Agregar Nuevo Curso</a>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -31,7 +31,6 @@
                         <th class="text-center">Horas</th>
                         <th class="text-center">Creditos</th>
                         <th class="text-center">Estado</th>
-                        <th class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
