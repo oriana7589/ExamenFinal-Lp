@@ -11,7 +11,7 @@ import java.util.List;
 public interface CRUDCurso {
    
 
-    public List listarCurso(); // listar
+    public List listarcurso(); // listar
     public Curso buscarcurso(int idcurso); // buscar
     public boolean agregarcurso(Curso curso); // agregar
     public boolean editarcurso(Curso curso); // editar

@@ -22,7 +22,7 @@ import java.util.List;
     Curso cu = new Curso();
 
     @Override
-    public List listarCurso() {
+    public List listarcurso() {
          ArrayList<Curso> cursos = new ArrayList<>();
         String consulta = " select * "
                         + "from curso ";

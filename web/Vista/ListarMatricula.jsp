@@ -50,7 +50,6 @@
                     %>
                     <tr>
                         <td><% out.print(matricula.getIdmatricula()); %></td>
-                        <td><% out.print(matricula.getIdestudiante()); %></td>
                         <td><% out.print(matricula.getSemestre()); %></td>
                         <td><% out.print(matricula.getCiclo()); %></td>
                         <td><% out.print(matricula.getIdcurso()); %></td>

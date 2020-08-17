@@ -6,7 +6,7 @@
 
 <%@page import="Modelo.Curso"%>
 <%@page import="ModeloDAO.CursoDAO"%>
-<%@page import="ModeloDAO.EstudianteDAO"%>
+
 <%@page import="java.util.Iterator"%>
 
 <%@page import="java.util.List"%>
