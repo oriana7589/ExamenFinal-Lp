@@ -84,7 +84,7 @@ public class ControladorCarrera extends HttpServlet{
             String s_estado = request.getParameter("f_estado");
             
             carrera.setIdcarrera(s_idcarrera);            
-           carrera.setNombre(s_nombre);
+             carrera.setNombre(s_nombre);
            carrera.setEstado(s_estado);
             carreraDAO.editarcarrera(carrera);
             acceso = listarcarrera;

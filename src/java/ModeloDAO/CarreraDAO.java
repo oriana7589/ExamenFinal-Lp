@@ -58,7 +58,7 @@ public class CarreraDAO implements CRUDCarrera{
             pst = con.prepareStatement(consulta);
             rs = pst.executeQuery();
             while (rs.next()) {
-                c.setIdcarrera(rs.getInt("idestudiante"));
+                c.setIdcarrera(rs.getInt("idcarrera"));
                 c.setNombre(rs.getString("nombre"));
                 c.setEstado(rs.getString("estado"));
             }

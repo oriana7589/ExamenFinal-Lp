@@ -42,4 +42,6 @@ public class Carrera {
     public void setIdcarrera(int idcarrera) {
         this.idcarrera = idcarrera;
     }
+
+    
 }

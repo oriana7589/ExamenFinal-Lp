@@ -34,12 +34,12 @@
                             <td><input class="form-control" type="text" name="f_nombre" value="<% out.println(curso.getNombre()); %>" maxlength="30" size="20" /></td>
                         </tr>
                         <tr>
-                            <td class="text-right">horas</td>
-                            <td><input class="form-control" type="text" name="f_horas" value="<% out.println(curso.gethoras()); %>" maxlength="40" size="20" /></td>
+                            <td class="text-right">Horas</td>
+                            <td><input class="form-control" type="text" name="f_horas" value="<% out.println(curso.getHoras()); %>" maxlength="40" size="20" /></td>
                         </tr>
                         <tr>
-                            <td class="text-right">creditos</td>
-                            <td><input class="form-control" type="text" name="f_creditos" value="<% out.println(curso.getcreditos()); %>" maxlength="8" size="8" /></td>
+                            <td class="text-right">Creditos</td>
+                            <td><input class="form-control" type="text" name="f_creditos" value="<% out.println(curso.getCreditos()); %>" maxlength="8" size="8" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">Estado</td>

@@ -63,12 +63,12 @@ import javax.servlet.http.HttpServletResponse;
             acceso = listarmatricula;
         }else if (s_accion.equalsIgnoreCase("agregarmatricula01")) {
             acceso = agregarmatricula;
-        }else if (s_accion.equalsIgnoreCase("agregarmatricula02")) { 
-            int s_idestudiante= Integer.valueOf(request.getParameter("f_idestudiante"));
+        }else if (s_accion.equalsIgnoreCase("agregarmatricula02")) {
             String s_semestre = request.getParameter("f_semestre");
             String s_ciclo = request.getParameter("f_ciclo");
             String s_estado = request.getParameter("f_estado");
              int s_idcurso= Integer.valueOf(request.getParameter("f_idcurso"));
+             int s_idestudiante= Integer.valueOf(request.getParameter("f_idestudiante"));
              int s_idcarrera= Integer.valueOf(request.getParameter("f_idcarrera"));
             
             
@@ -76,8 +76,8 @@ import javax.servlet.http.HttpServletResponse;
             matricula.setCiclo(s_ciclo);
             matricula.setEstado(s_estado);
             matricula.setIdcurso(s_idcurso);
-            matricula.setIdcurso(s_idestudiante);
-            matricula.setIdcurso(s_idcarrera);
+            matricula.setIdestudiante(s_idestudiante);
+            matricula.setIdcarrera(s_idcarrera);
             
             
             matriculaDAO.agregarmatricula(matricula);
@@ -91,17 +91,17 @@ import javax.servlet.http.HttpServletResponse;
             String s_semestre = request.getParameter("f_semestre");
             String s_ciclo = request.getParameter("f_ciclo");
             String s_estado = request.getParameter("f_estado");
-            int s_idcurso= Integer.valueOf(request.getParameter("f_idcurso"));
-            int s_idestudiante= Integer.valueOf(request.getParameter("f_idestudiante"));
-            int s_idcarrera= Integer.valueOf(request.getParameter("f_idcarrera"));
+          int s_idcurso= Integer.valueOf(request.getParameter("f_idcurso"));
+             int s_idestudiante= Integer.valueOf(request.getParameter("f_idestudiante"));
+             int s_idcarrera= Integer.valueOf(request.getParameter("f_idcarrera"));
             
             matricula.setIdmatricula(s_idmatricula);            
             matricula.setSemestre(s_semestre);
             matricula.setCiclo(s_ciclo);
             matricula.setEstado(s_estado);
             matricula.setIdcurso(s_idcurso);
-            matricula.setIdcurso(s_idestudiante);
-            matricula.setIdcurso(s_idcarrera);
+            matricula.setIdestudiante(s_idestudiante);
+            matricula.setIdcarrera(s_idcarrera);
             matriculaDAO.editarmatricula(matricula);
             acceso = listarmatricula;
         }else if (s_accion.equals("eliminarmatricula")) {

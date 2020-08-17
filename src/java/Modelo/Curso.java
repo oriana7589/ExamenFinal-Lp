@@ -63,5 +63,7 @@ public class Curso {
     public void setCreditos(int creditos) {
         this.creditos = creditos;
     }
+
+    
 }
 
