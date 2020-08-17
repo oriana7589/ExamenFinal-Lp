@@ -61,7 +61,14 @@
                     <%    }
                     %>                    
                 </tbody>
+                  
+                    
             </table>
+            </table>
+            <tr>
+                        <td> </td>
+                        <td colspan="2"><a class="btn btn-success"href="index.html"><FONT COLOR="white">REGRESAR</a></td>
+                    </tr>
         </div>
     </body>
 </html>
