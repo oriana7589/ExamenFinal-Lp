@@ -44,7 +44,6 @@
                         <tr>
                             <td colspan="2" class="text-center">
                                 <input class="btn-primary" type="submit" value="Agregar Estudiante" name="agregar" />
-                                <input type="hidden" value="agregarestudiante02" name="f_accion"/>
                                     
                             </td>
                         </tr>

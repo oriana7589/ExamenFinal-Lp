@@ -3,7 +3,7 @@ package Interfaces;
 import Modelo.Estudiante;
 import java.util.List;
 
-public interface CRUD {
+public interface CRUDEstudiante {
     public List listarestudiante(); // listar
     public Estudiante buscarestudiante(int idestudiante); // buscar
     public boolean agregarestudiante(Estudiante estudiante); // agregar
