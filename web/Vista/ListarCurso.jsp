@@ -6,7 +6,6 @@
 
 <%@page import="Modelo.Curso"%>
 <%@page import="ModeloDAO.CursoDAO"%>
-
 <%@page import="java.util.Iterator"%>
 
 <%@page import="java.util.List"%>
@@ -38,7 +37,7 @@
 
                     <%
                         CursoDAO cursoDAO = new CursoDAO();
-                        List<Curso> cursos = cursoDAO.listarCurso();
+                        List<Curso> cursos = cursoDAO.listarcurso();
                         Iterator<Curso> iterator = cursos.iterator();
                         Curso curso = null;
                         while (iterator.hasNext()) {
@@ -49,8 +48,8 @@
                     <tr>
                         <td><% out.print(curso.getIdcurso()); %></td>
                         <td><% out.print(curso.getNombre()); %></td>
-                        <td><% out.print(curso.gethoras()); %></td>
-                        <td><% out.print(curso.getcreditos()); %></td>
+                        <td><% out.print(curso.getHoras()); %></td>
+                        <td><% out.print(curso.getCreditos()); %></td>
                         <td><% out.print(curso.getEstado()); %></td>
                         <td>
                             <a class="btn btn-warning" href="ControladorCurso?f_accion=editarcurso01&f_idcurso=<% out.print(curso.getIdcurso()); %>">

@@ -8,25 +8,23 @@ package Modelo;
 
 public class Matricula {
     private int idmatricula;
-    private String idestudiante;
+    private int idestudiante;
     private String semestre;
     private String ciclo;
     private String estado;
-   private String idcurso;
-   
-     private String idcarrera;
+   private  int idcurso;
+     private int idcarrera;
  
     public  Matricula() {
     }
 
-    public Matricula(int idmatricula, String semestre, String ciclo, String estado ,String idcurso,String idestudiante,String idcarrera) {
+    public Matricula(int idmatricula, int idestudiante,String semestre, String ciclo ,int idcurso,int idcarrera, String estado) {
         this.idmatricula = idmatricula; 
         this.idestudiante = idestudiante;
         this.semestre = semestre;
         this.ciclo = ciclo;
-        this.estado = estado;
         this.idcurso = idcurso;
-       
+        this.estado = estado;
         this.idcarrera = idcarrera;
         
     }
@@ -63,25 +61,25 @@ public class Matricula {
         this.ciclo =ciclo;
     }
 
-    public String getIdcurso() {
+    public int getIdcurso() {
         return idcurso;
     }
 
-    public void setIdcurso(String idcurso) {
+    public void setIdcurso(int idcurso) {
         this.idcurso= idcurso;
     }
-   public String getIdestudiante() {
+   public int getIdestudiante() {
         return idestudiante;
     }
 
-    public void setIdestudiante(String idestudiante) {
+    public void setIdestudiante(int idestudiante) {
         this.idestudiante= idestudiante;
     }
-      public String getIdcarrera() {
+      public int getIdcarrera() {
         return idcarrera;
     }
 
-    public void setIdcarrera(String idcarrera) {
+    public void setIdcarrera(int idcarrera) {
         this.idcarrera= idcarrera;
     }
     

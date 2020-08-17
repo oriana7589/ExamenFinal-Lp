@@ -8,9 +8,7 @@
 <%@page import="Modelo.Matricula"%>
 <%@page import="ModeloDAO.MatriculaDAO"%>
 <%@page import="java.util.Iterator"%>
-
 <%@page import="java.util.List"%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -50,6 +48,7 @@
                     %>
                     <tr>
                         <td><% out.print(matricula.getIdmatricula()); %></td>
+                        <td><% out.print(matricula.getIdestudiante()); %></td>
                         <td><% out.print(matricula.getSemestre()); %></td>
                         <td><% out.print(matricula.getCiclo()); %></td>
                         <td><% out.print(matricula.getIdcurso()); %></td>

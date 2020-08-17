@@ -73,12 +73,13 @@ public class ControladorCurso extends HttpServlet{
             acceso = agregarcurso;
         }else if (s_accion.equalsIgnoreCase("agregarcurso02")) {
             String s_nombre = request.getParameter("f_nombre");
-            String s_horas = request.getParameter("f_horas");
-            String s_creditos = request.getParameter("f_creditos");
+            int s_horas= Integer.valueOf(request.getParameter("f_horas"));
+             int s_creditos= Integer.valueOf(request.getParameter("f_creditos"));
+              
             String s_estado = request.getParameter("f_estado");
             curso.setNombre(s_nombre);
-            curso.sethoras(s_horas);
-            curso.setcreditos(s_creditos);
+            curso.setHoras(s_creditos);
+            curso.setCreditos(s_horas);
             curso.setEstado(s_estado);
             cursoDAO.agregarcurso(curso);
             acceso = listarcurso;
@@ -89,14 +90,14 @@ public class ControladorCurso extends HttpServlet{
         }else if (s_accion.equalsIgnoreCase("editarcurso02")) {
             int s_idcurso = Integer.valueOf(request.getParameter("f_idcurso"));
             String s_nombre = request.getParameter("f_nombre");
-            String s_horas = request.getParameter("f_horas");
-            String s_creditos = request.getParameter("f_creditos");
+            int s_horas= Integer.valueOf(request.getParameter("f_horas"));
+             int s_creditos= Integer.valueOf(request.getParameter("f_creditos"));
             String s_estado = request.getParameter("f_estado");
             
             curso.setIdcurso(s_idcurso);            
             curso.setNombre(s_nombre);
-            curso.sethoras(s_horas);
-            curso.setcreditos(s_creditos);
+            curso.setHoras(s_horas);
+            curso.setCreditos(s_creditos);
             curso.setEstado(s_estado);
             cursoDAO.editarcurso(curso);
             acceso = listarcurso;

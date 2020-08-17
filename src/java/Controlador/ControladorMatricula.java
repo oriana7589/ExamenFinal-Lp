@@ -63,13 +63,13 @@ import javax.servlet.http.HttpServletResponse;
             acceso = listarmatricula;
         }else if (s_accion.equalsIgnoreCase("agregarmatricula01")) {
             acceso = agregarmatricula;
-        }else if (s_accion.equalsIgnoreCase("agregarmatricula02")) {
+        }else if (s_accion.equalsIgnoreCase("agregarmatricula02")) { 
+            int s_idestudiante= Integer.valueOf(request.getParameter("f_idestudiante"));
             String s_semestre = request.getParameter("f_semestre");
             String s_ciclo = request.getParameter("f_ciclo");
             String s_estado = request.getParameter("f_estado");
-            String s_idcurso=request.getParameter("f_idcurso");
-             String s_idestudiante=request.getParameter("f_idestudiante");
-             String s_idcarrera=request.getParameter("f_idcarrera");
+             int s_idcurso= Integer.valueOf(request.getParameter("f_idcurso"));
+             int s_idcarrera= Integer.valueOf(request.getParameter("f_idcarrera"));
             
             
             matricula.setSemestre(s_semestre);
@@ -91,9 +91,9 @@ import javax.servlet.http.HttpServletResponse;
             String s_semestre = request.getParameter("f_semestre");
             String s_ciclo = request.getParameter("f_ciclo");
             String s_estado = request.getParameter("f_estado");
-            String s_idcurso=request.getParameter("f_idcurso");
-            String s_idestudiante=request.getParameter("f_idestudiante");
-            String s_idcarrera=request.getParameter("f_idcarrera");
+            int s_idcurso= Integer.valueOf(request.getParameter("f_idcurso"));
+            int s_idestudiante= Integer.valueOf(request.getParameter("f_idestudiante"));
+            int s_idcarrera= Integer.valueOf(request.getParameter("f_idcarrera"));
             
             matricula.setIdmatricula(s_idmatricula);            
             matricula.setSemestre(s_semestre);

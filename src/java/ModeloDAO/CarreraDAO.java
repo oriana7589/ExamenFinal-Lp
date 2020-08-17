@@ -28,8 +28,8 @@ public class CarreraDAO implements CRUDCarrera{
     @Override
     public List listarcarrera() {
         ArrayList<Carrera> carreras = new ArrayList<>();
-        String consulta = " select * "
-                        + "from carreras ";
+        String consulta = " select* "
+                        + "from carrera ";
         try {
             con = cn.getConnection();
             pst = con.prepareStatement(consulta);
@@ -37,6 +37,7 @@ public class CarreraDAO implements CRUDCarrera{
             while (rs.next()) {
                 Carrera carrera = new Carrera();
                 carrera.setIdcarrera(rs.getInt("idcarrera"));
+                 carrera.setNombre(rs.getString("nombre"));
                 carrera.setEstado(rs.getString("estado"));
                 carreras.add(carrera);
             }

@@ -35,13 +35,11 @@ public class Carrera {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public void setIdcarrera(int aInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+     public int getIdcarrera() {
+        return idcarrera;
     }
 
-    public String getIdcarrera() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setIdcarrera(int idcarrera) {
+        this.idcarrera = idcarrera;
     }
-
 }

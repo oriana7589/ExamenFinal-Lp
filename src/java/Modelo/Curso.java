@@ -8,14 +8,14 @@ package Modelo;
 public class Curso {
     private int idcurso;
     private String nombre;
-    private String horas;
-    private String creditos;
+    private int horas;
+    private int creditos;
     private String estado;
 
     public Curso() {
     }
 
-    public Curso(int idcurso, String nombre, String horas,String creditos, String estado) {
+    public Curso(int idcurso, String nombre, int horas,int creditos, String estado) {
         this.idcurso = idcurso;
         this.nombre = nombre;
         this.horas = horas;
@@ -48,29 +48,20 @@ public class Curso {
     }
 
  
-    public String gethoras() {
+    public int getHoras() {
         return horas;
     }
 
-    public void sethoras(String horas) {
+    public void setHoras(int horas) {
         this.horas = horas;
     }
 
-    public String getcreditos() {
+    public int getCreditos() {
         return creditos;
     }
 
-    public void setCodigo(String creditos) {
+    public void setCreditos(int creditos) {
         this.creditos = creditos;
     }
-
-    public void setcreditos(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
-    
-    
-    
 }
 

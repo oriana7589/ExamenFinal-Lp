@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author TuNombre
  */
-public class ControladorEstudiante extends HttpServlet {
+public class Controlador extends HttpServlet {
     String listarestudiante = "Vista/ListarEstudiante.jsp";
     String agregarestudiante = "Vista/AgregarEstudiante.jsp";
     String editarestudiante = "Vista/EditarEstudiante.jsp";
